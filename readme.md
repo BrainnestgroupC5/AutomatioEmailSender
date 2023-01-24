@@ -20,7 +20,16 @@ It is used for a company to send automated emails to its clients.
 The project is divided to : 
 - email_data.py : Which represents the data of the email information. 
     - We created a class EmailData, which contains the following properties :
-        - response: We used external endpoint and getting the data from API
+        - response: We used external endpoint and getting the data from API - 
+        
+        (https://www.npoint.io/docs/de5c3533349a7f588f4d)-it is our api.We have created data from this webpage.You can see data in below.And it is also possible to just entering this link and see the data
+        {
+            "sender_email":{"email":"python.email270@gmail.com","password":"rnihqtzturzznjju"},
+            "emails":{"t.muzeffer.1998@gmail.com":{"name":"muzeffer"},"negarchabi@gmail.com":{"name":"negar"},"nour.eimesh96@gmail.com":{"name":"noor"}},
+            "subject":"[DATE] Oil Sales",
+            "content":"Dear [NAME],\nI trust you are well.  Here is the report of sales for [DATE]\nSales\nThe following sales were generated in the day:\nCanola Oil – 200\nOlive Oil – 60\nReturns\nThere were no returns in [DATE]."}
+        )
+
         - email_data : which has the data that is coming from the request. 
         - emails : Here we are getting the receivers emails from the data that we already have.
         - content : Getting the content from the data.
